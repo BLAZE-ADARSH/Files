@@ -1,11 +1,11 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-
+require("./src/models/product")
 
 // Models
-const Product = require("./src/models/product");
-const { create } = require("./src/models/product");
+const Product = mongoose.model('Product');
+// const { create } = require("./src/models/product");
 
 
 //Define app
